@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapcart - Modern Ecommerce Store</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <h1 class="logo">Snapcart</h1>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Cart -->
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <i class="fas fa-bag-shopping"></i>
+                <span>Snapcart</span>
+            </div>
+
+            <h1>Shop the Latest Trends Today</h1>
+            <p>Premium fashion at best prices.</p>
+
+            <a href="#products" class="hero-btn">Explore Collection</a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features" id="features">
+        <h2>Why Choose Snapcart?</h2>
+
+        <div class="feature-box">
+
+            <div class="feature-card reveal">
+                <i class="fas fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick doorstep delivery across India.</p>
+            </div>
+
+            <div class="feature-card reveal">
+                <i class="fas fa-tag"></i>
+                <h3>Best Prices</h3>
+                <p>Affordable fashion & premium brands.</p>
+            </div>
+
+            <div class="feature-card reveal">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Payments</h3>
+                <p>Trusted & safe transactions.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= OFFERS ================= -->
+    <section class="offers" id="offers">
+        <h2>Special Offers 🎁</h2>
+
+        <div class="offer-box">
+
+            <div class="offer-card reveal">
+                <h3>🔥 Flat 50% Off</h3>
+                <p>On Shoes Collection</p>
+            </div>
+
+            <div class="offer-card reveal">
+                <h3>⌚ Buy 1 Get 1 Free</h3>
+                <p>Exclusive Watches Offer</p>
+            </div>
+
+            <div class="offer-card reveal">
+                <h3>👕 Winter Sale</h3>
+                <p>Up to 40% Off Clothing</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CATEGORY FILTER ================= -->
+    <section class="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="cat-box">
+            <button class="cat active" data-filter="all">All</button>
+            <button class="cat" data-filter="shoes">Shoes</button>
+            <button class="cat" data-filter="watch">Watches</button>
+            <button class="cat" data-filter="clothing">Clothing</button>
+        </div>
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="product-section" id="products">
+        <h2 class="heading">Latest Products</h2>
+
+        <div class="products">
+
+            <!-- 10 Products -->
+            <div class="card shoes">
+                <img src="blackShoes.webp">
+                <h3>Nike Shoes</h3>
+                <p>Men Premium Shoes</p>
+                <span>₹7,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card shoes">
+                <img src="blueShoes.webp">
+                <h3>Blue Sneakers</h3>
+                <p>Stylish Footwear</p>
+                <span>₹4,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card shoes">
+                <img src="Shoes.png">
+                <h3>Striped Sneakers</h3>
+                <p>Casual Shoes</p>
+                <span>₹1,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card watch">
+                <img src="watch.png">
+                <h3>Lady Watch</h3>
+                <p>Luxury Collection</p>
+                <span>₹999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card watch">
+                <img src="MenWatch.png">
+                <h3>Men Watch</h3>
+                <p>Classic Design</p>
+                <span>₹1,499</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card watch">
+                <img src="Black.png">
+                <h3>Luxury Watch</h3>
+                <p>Premium Edition</p>
+                <span>₹4,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card clothing">
+                <img src="1.jpg">
+                <h3>Cotton Shirt</h3>
+                <p>Men Fashion Shirt</p>
+                <span>₹1,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card clothing">
+                <img src="2.jpg">
+                <h3>Women T-shirt</h3>
+                <p>Casual Outfit</p>
+                <span>₹999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card clothing">
+                <img src="3.jpg">
+                <h3>Stylish Hoodie</h3>
+                <p>Winter Premium Wear</p>
+                <span>₹2,499</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="card shoes">
+                <img src="4.jpg">
+                <h3>Sports Running Shoes</h3>
+                <p>Comfort & Performance</p>
+                <span>₹3,999</span>
+                <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p><i class="fas fa-envelope"></i> snapcart@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-location-dot"></i> Pune, India</p>
+        </div>
+    </section>
+
+
+    <!-- Popup -->
+    <div id="popup">✔ Added to Cart Successfully</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Snapcart | Designed by Aaditya</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
